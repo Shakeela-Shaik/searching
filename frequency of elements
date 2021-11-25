@@ -1,0 +1,25 @@
+class Main
+{
+	public static void frequency(int[] a)
+	{
+	    int[] freq = new int[a.length];
+	    for(int e:a)
+	    {
+	        freq[e]++;
+	    }
+	    for(int i=0;i<freq.length; i++)
+	    {
+	        if (freq[i]>0)
+	         {
+	             System.out.printf("%d appears %d times\n",i,freq[i]);
+	         }   
+	        
+	    }
+	    
+	}
+	public static void main(String[] args)
+	{
+	    int[] a={2,3,3,2,1};
+	    frequency(a);
+	}
+}
